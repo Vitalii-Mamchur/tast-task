@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+
+.hero {
+  padding-top: 20px;
+  background: $bg;
+}
+
+.hero-bg {
+  // position: fixed;
+  width: 100%;
+  height: 500px;
+  background-image: url(../../img/frame-image-sm.jpg);
+  padding: 40px 16px 71px 16px;
+}
+
+.hero-text {
+  color: #fff;
+  & h1 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 1;
+  }
+  & p {
+    margin: 0;
+    margin: 21px 0 32px 0;
+    font-size: 16px;
+    line-height: 1.62;
+  }
+}

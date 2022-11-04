@@ -1,0 +1,18 @@
+@import '../../variables.scss';
+
+.wrapper {
+  width: 360px;
+  padding: 0 16px;
+  margin: 0 auto;
+  // outline: 1px solid red;
+
+  @media (min-width: $breakpoint_md) {
+    padding: 0 32px;
+  }
+  @media (min-width: breakpoint_xl) {
+    padding: 0 60px;
+  }
+  @media (min-width: breakpoint_xxl) {
+    width: 1170px;
+  }
+}

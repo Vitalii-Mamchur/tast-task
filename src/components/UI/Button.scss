@@ -1,0 +1,9 @@
+@import '../../variables.scss';
+
+.button {
+  width: 100px;
+  height: 34px;
+  border-radius: 80px;
+  border: none;
+  background-color: $primary;
+}
