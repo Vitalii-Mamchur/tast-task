@@ -1,23 +1,18 @@
 import './CardUser.scss';
-// import '../../img/users';
 
 function CardUser(props) {
   return (
     <div className="card">
       <div className="card-img">
-        <img src={props.img} alt="face" />
+        <img src={props.photo} alt="face" />
       </div>
       <div className="card-name">
-        <p>{props.name}</p>
+        <p className="card-info__item">{props.name}</p>
       </div>
-      <div className="card-major">
-        <p>{props.major}</p>
-      </div>
-      <div className="card-email">
-        <p>{props.email}</p>
-      </div>
-      <div className="card-phone">
-        <p>{props.phone}</p>
+      <div className="card-info">
+        <p className="card-info__item">{props.position}</p>
+        <p className="card-info__item">{props.email}</p>
+        <p className="card-info__item">{props.phone}</p>
       </div>
     </div>
   );

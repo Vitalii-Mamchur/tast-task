@@ -15,10 +15,10 @@ function UsersList() {
             <CardUser
               key={uuidv4()}
               name={user.name}
-              major={user.major}
-              mail={user.mail}
+              position={user.position}
+              email={user.email}
               phone={user.phone}
-              img={user.img}
+              photo={user.photo}
             />
           );
         })}
