@@ -1,18 +1,18 @@
-import './CardUser.scss';
+import styles from './CardUser.module.scss';
 
 function CardUser(props) {
   return (
-    <div className="card">
-      <div className="card-img">
+    <div className={styles.card}>
+      <div className={styles.cardImg}>
         <img src={props.photo} alt="face" />
       </div>
-      <div className="card-name">
-        <p className="card-info__item">{props.name}</p>
+      <div className={styles.cardName}>
+        <p className={styles.cardInfoItem}>{props.name}</p>
       </div>
-      <div className="card-info">
-        <p className="card-info__item">{props.position}</p>
-        <p className="card-info__item">{props.email}</p>
-        <p className="card-info__item">{props.phone}</p>
+      <div className={styles.cardInfo}>
+        <p className={styles.cardInfoItem}>{props.position}</p>
+        <p className={styles.cardInfoItem}>{props.email}</p>
+        <p className={styles.cardInfoItem}>{props.phone}</p>
       </div>
     </div>
   );

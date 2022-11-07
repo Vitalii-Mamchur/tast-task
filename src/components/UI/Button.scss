@@ -1,9 +1,17 @@
 @import '../../variables.scss';
 
-.button {
-  width: 100px;
+.button100,
+.button120 {
   height: 34px;
   border-radius: 80px;
   border: none;
   background-color: $primary;
+}
+
+.button100 {
+  width: 100px;
+}
+
+.button120 {
+  width: 120px;
 }

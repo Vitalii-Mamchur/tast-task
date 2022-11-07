@@ -1,17 +1,17 @@
 import Button from '../UI/Button';
-import './Header.scss';
+import styles from './Header.module.scss';
 import logo from '../../img/logo.svg';
 
 function Header() {
   return (
     <header>
-      <div className="header">
-        <div className="header-logo">
+      <div className={styles.header}>
+        <div className={styles.headerLogo}>
           <img src={logo} alt="logo" />
         </div>
-        <div className="header-button">
-          <Button type="button" class="button" text="Users" />
-          <Button type="button" class="button" text="Sign up" />
+        <div className={styles.headerButton}>
+          <Button type="button" class="button100" text="Users" />
+          <Button type="button" class="button100" text="Sign up" />
         </div>
       </div>
     </header>
