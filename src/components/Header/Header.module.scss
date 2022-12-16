@@ -1,7 +1,12 @@
 .header {
+  box-sizing: border-box;
+
+  min-width: 328px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0 16px;
+  background-color: #ffffff;
 }
 
 .headerLogo img {

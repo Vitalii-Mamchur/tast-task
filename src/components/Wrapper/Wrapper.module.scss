@@ -1,11 +1,13 @@
 @import '../../variables.scss';
 
 .wrapper {
-  width: 360px;
+  width: 100%;
   padding: 20px 16px 80px;
   margin: 0 auto;
+  // background-color: $bg;
   background-color: $bg;
   @media (min-width: $breakpoint_md) {
+    width: 100%;
     padding: 0 32px;
   }
   @media (min-width: breakpoint_xl) {
