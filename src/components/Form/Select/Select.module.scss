@@ -1,0 +1,14 @@
+.selectContainer {
+  margin-top: 43px;
+  text-align: start;
+}
+
+.selectTitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.selectTitle::before {
+  content: '';
+}

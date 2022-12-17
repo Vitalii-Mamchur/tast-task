@@ -1,0 +1,46 @@
+@import '../../../../variables';
+
+.selectItem {
+  margin: 0 0 10px 0;
+}
+
+.selectInput {
+  display: none;
+}
+
+.selectInput:checked + .selectLabel::after {
+  transform: scale(1);
+}
+
+.selectLabel {
+  display: flex;
+  font-size: 16px;
+  line-height: 140%;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.selectLabel::before {
+  content: '';
+  align-self: flex-start;
+  flex: 0 0 20px;
+  height: 20px;
+  // background-color: $input-border;
+  border: 1px solid $input-border;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+
+.selectLabel::after {
+  transition: transform 0.3s ease 0s;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #7a956b;
+  border-radius: 50%;
+  transform: scale(0);
+}

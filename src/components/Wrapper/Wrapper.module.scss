@@ -2,10 +2,11 @@
 
 .wrapper {
   width: 100%;
-  padding: 20px 16px 80px;
+  padding: 140px 16px 80px;
   margin: 0 auto;
-  // background-color: $bg;
+  // background-color: #ccc;
   background-color: $bg;
+  // outline: 1px solid red;
   @media (min-width: $breakpoint_md) {
     width: 100%;
     padding: 0 32px;

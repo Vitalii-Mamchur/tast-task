@@ -1,0 +1,70 @@
+/* .input {
+  padding-top: 50px;
+} */
+
+// .inputStyle input {
+//   width: 296px;
+//   padding: 14px 16px;
+// }
+@import '../../../variables.scss';
+
+.label {
+  position: relative;
+}
+
+.input {
+  outline: none;
+  height: 54px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid $input-border;
+  border-radius: 4px;
+  background-color: inherit;
+  /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+// .input:focus,
+// .input.field {
+//   border-color: var(--focus_color);
+// }
+
+.input:focus + .placeholder,
+.input.field + .placeholder {
+  color: $input-text;
+  cursor: default;
+  background-color: $bg;
+  top: -7px;
+  padding: 0 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.placeholder {
+  position: absolute;
+  font-weight: 300;
+  cursor: text;
+  left: 16px;
+  top: 13px;
+  color: $input-text;
+  background-color: $bg;
+  transition: all 0.3s ease-in-out;
+}
+
+.inputError {
+  opacity: 0;
+  font-weight: 300;
+  font-size: 10px;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  margin-left: 16px;
+  padding: 0 4px;
+  color: var(--error_color);
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.inputError.active {
+  opacity: 1;
+}

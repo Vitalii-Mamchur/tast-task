@@ -3,7 +3,7 @@ import styles from './Header.module.scss';
 import logo from '../../img/logo.svg';
 
 function Header() {
-  const handleClickUsersBtn = () => {};
+  // const handleClickUsersBtn = () => {};
 
   return (
     <header>
