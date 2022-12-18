@@ -21,14 +21,12 @@ function UsersList() {
 
   return (
     <div className={styles.list}>
-      <div className={styles.listTitle}>
-        <h4>Working with GET request</h4>
-      </div>
+      <h4 className={styles.listTitle}>Working with GET request</h4>
       <div className={styles.listCards}>
         <ul className={styles.listItems}>
           {users.map((user) => {
             return (
-              <li key={user.id}>
+              <li className={styles.listItem} key={user.id}>
                 <CardUser
                   name={user.name}
                   position={user.position}
