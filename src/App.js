@@ -1,9 +1,10 @@
-import './App.css';
 import Wrapper from './components/Wrapper/Wrapper';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import ListUsers from './components/ListUsers/ListUsers';
 import Form from './components/Form/Form';
+
+import './App.css';
 
 function App() {
   return (

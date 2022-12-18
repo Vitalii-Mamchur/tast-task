@@ -7,6 +7,9 @@
   border-radius: 4px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   padding: 20px;
+  @media (min-width: $breakpoint_md) {
+    box-shadow: none;
+  }
 }
 
 .cardInfo,

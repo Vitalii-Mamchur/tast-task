@@ -41,14 +41,3 @@
     min-width: 370px;
   }
 }
-
-.listItem {
-  @media (min-width: $breakpoint_md) {
-    // width: 344px;
-  }
-  @media (min-width: $breakpoint_xl) {
-    // width: 242px;
-  }
-  @media (min-width: $breakpoint_xxl) {
-  }
-}
