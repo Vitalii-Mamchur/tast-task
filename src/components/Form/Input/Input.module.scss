@@ -1,15 +1,8 @@
-/* .input {
-  padding-top: 50px;
-} */
-
-// .inputStyle input {
-//   width: 296px;
-//   padding: 14px 16px;
-// }
 @import '../../../variables.scss';
 
 .label {
   position: relative;
+  min-width: 328px;
 }
 
 .input {
