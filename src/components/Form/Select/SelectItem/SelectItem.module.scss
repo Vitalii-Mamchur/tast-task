@@ -1,7 +1,11 @@
 @import '../../../../variables';
 
 .selectItem {
-  margin: 0 0 10px 0;
+  margin-top: 7px;
+}
+
+.selectItem:first-of-type {
+  margin-top: 11px;
 }
 
 .selectInput {
@@ -21,6 +25,10 @@
   cursor: pointer;
 }
 
+.selectInput:checked + .selectLabel::before {
+  border: 1px solid $secondary;
+}
+
 .selectLabel::before {
   content: '';
   align-self: flex-start;
@@ -29,7 +37,7 @@
   // background-color: $input-border;
   border: 1px solid $input-border;
   border-radius: 50%;
-  margin: 0 10px 0 0;
+  margin: 0 12px 0 0;
 }
 
 .selectLabel::after {
@@ -40,7 +48,7 @@
   left: 5px;
   width: 12px;
   height: 12px;
-  background-color: #7a956b;
+  background-color: $secondary;
   border-radius: 50%;
   transform: scale(0);
 }

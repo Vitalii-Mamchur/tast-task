@@ -1,20 +1,20 @@
 @import '../../variables.scss';
 
 .wrapper {
-  width: 100%;
-  padding: 140px 16px 80px;
+  min-width: 360px;
+  padding: 140px 16px 100px;
   margin: 0 auto;
   // background-color: #ccc;
   background-color: $bg;
   // outline: 1px solid red;
   @media (min-width: $breakpoint_md) {
-    width: 100%;
-    padding: 0 32px;
+    // width: 100%;
+    padding: 140px 32px 100px;
   }
-  @media (min-width: breakpoint_xl) {
-    padding: 0 60px;
+  @media (min-width: $breakpoint_xl) {
+    padding: 140px 60px 100px;
   }
-  @media (min-width: breakpoint_xxl) {
-    width: 1170px;
+  @media (min-width: $breakpoint_xxl) {
+    max-width: 1170px;
   }
 }

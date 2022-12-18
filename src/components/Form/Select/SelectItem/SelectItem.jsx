@@ -6,10 +6,10 @@ function SelectItem(props) {
       <input
         type="radio"
         id={props.id}
-        checked={props.checked}
+        onChange={props.checked}
         className={styles.selectInput}
       />
-      <label for={props.id} className={styles.selectLabel}>
+      <label htmlFor={props.id} className={styles.selectLabel}>
         <span className={styles.selectTitle}>{props.selectItemTitle}</span>
       </label>
     </div>

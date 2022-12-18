@@ -1,3 +1,8 @@
+.container {
+  width: 380px;
+  margin: 0 auto;
+}
+
 .form {
   margin-top: 140px;
   & h4 {
@@ -8,5 +13,9 @@
 }
 
 .formInput {
+  margin-top: 50px;
+}
+
+.submitButton {
   margin-top: 50px;
 }

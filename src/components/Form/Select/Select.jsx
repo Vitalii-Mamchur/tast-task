@@ -8,16 +8,16 @@ function Select() {
       <h2 className={styles.selectTitle}>Select your position</h2>
       <SelectItem
         id="frontend"
-        checked="true"
+        onChange="true"
         selectItemTitle="Frontend developer"
       />
       <SelectItem
         id="backend"
-        checked="false"
+        onChange="false"
         selectItemTitle="Backend developer"
       />
-      <SelectItem id="designer" checked="false" selectItemTitle="Designer" />
-      <SelectItem id="qa" checked="false" selectItemTitle="QA" />
+      <SelectItem id="designer" onChange="false" selectItemTitle="Designer" />
+      <SelectItem id="qa" onChange="false" selectItemTitle="QA" />
     </div>
   );
 }

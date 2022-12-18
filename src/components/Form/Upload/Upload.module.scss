@@ -1,0 +1,42 @@
+@import '../../../variables';
+
+* {
+  box-sizing: border-box;
+}
+
+.upload {
+  display: flex;
+  margin-top: 47px;
+  height: 54px;
+}
+
+.uploadButton {
+  padding: 14px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+}
+
+.uploadLabel {
+  display: flex;
+  flex: auto;
+  padding: 14px 16px;
+  border: 1px solid $input-border;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.uploadButtonText,
+.uploadLabelText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.uploadButtonText {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.uploadLabelText {
+  color: $input-text;
+}
