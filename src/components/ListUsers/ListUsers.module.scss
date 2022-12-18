@@ -47,8 +47,10 @@
     min-width: 344px;
   }
   @media (min-width: $breakpoint_xl) {
+    min-width: 282px;
   }
   @media (min-width: $breakpoint_xxl) {
+    min-width: 370px;
   }
 }
 
