@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 16px;
-  background-color: #ffffff;
+  background-color: $white;
   @media (min-width: $breakpoint_md) {
     margin: 0 32px;
   }

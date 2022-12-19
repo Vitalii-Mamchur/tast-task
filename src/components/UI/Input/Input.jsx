@@ -23,6 +23,7 @@ function Input(props) {
       <input id={props.id} type={props.type} className={styles.input} />
       <span className={styles.placeholder}>{props.placeholder}</span>
       <span className={styles.inputError}>{props.inputError}</span>
+      <span className={styles.helperText}>{props.helperText}</span>
     </div>
   );
 }

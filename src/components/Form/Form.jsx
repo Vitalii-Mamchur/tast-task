@@ -1,5 +1,5 @@
-import Input from './Input/Input';
-import Button from '../UI/Button';
+import Input from '../UI/Input/Input';
+import Button from '../UI/Button/Button';
 import Select from './Select/Select';
 import Upload from './Upload/Upload';
 
@@ -20,7 +20,7 @@ function Form() {
           <Input
             placeholder="Phone"
             inputError="Please enter your phone"
-            // helperText="Please enter your phone"
+            helperText="+38 (XXX) XXX - XX - XX"
           />
         </div>
         <Select />

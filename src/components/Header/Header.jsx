@@ -1,4 +1,4 @@
-import Button from '../UI/Button';
+import Button from '../UI/Button/Button';
 import styles from './Header.module.scss';
 import logo from '../../img/logo.svg';
 

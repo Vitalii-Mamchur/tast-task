@@ -10,7 +10,8 @@
   height: 54px;
   width: 100%;
   padding: 14px 16px;
-  border: 1px solid $input-border;
+  border: 1px solid black;
+  // border: 1px solid $input-border;
   border-radius: 4px;
   background-color: inherit;
   /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); */
@@ -46,18 +47,28 @@
 
 .inputError {
   opacity: 0;
+  position: absolute;
   font-weight: 300;
   font-size: 10px;
-  position: absolute;
   top: 33px;
   left: 0;
   margin-left: 16px;
   padding: 0 4px;
-  color: var(--error_color);
-  background-color: #fff;
+  color: $error;
+  background-color: $white;
   transition: all 0.3s ease-in-out;
 }
 
 .inputError.active {
   opacity: 1;
+}
+
+.helperText {
+  position: absolute;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  top: 58px;
+  left: 16px;
+  color: $input-text;
 }
