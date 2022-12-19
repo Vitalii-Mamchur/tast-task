@@ -5,11 +5,14 @@ import Button from '../UI/Button';
 // import users from './data';
 import styles from './ListUsers.module.scss';
 
-const URL =
-  'https://frontend-test-assignment-api.abz.agency/api/v1/users?page=1&count=15';
+const PER_PAGE = 6;
 
 function UsersList() {
   const [users, setUsers] = useState([]);
+  const [page, setPage] = useState(1);
+
+  let URL = `https://frontend-test-assignment-api.abz.agency/api/v1/users?page=${page}&count=${PER_PAGE}`;
+
   useEffect(() => {
     fetch(URL)
       .then((response) => response.json())
@@ -18,6 +21,8 @@ function UsersList() {
   }, []);
 
   // if (data.success) { // process success response } else { // process server errors } }
+
+  function handleOnClick() {}
 
   return (
     <div className={styles.list}>
@@ -39,7 +44,12 @@ function UsersList() {
           })}
         </ul>
       </div>
-      <Button type="button" class="button120" text="Show more" />
+      <Button
+        type="button"
+        class="button120"
+        text="Show more"
+        onClickHandler={handleOnClick}
+      />
     </div>
   );
 }
